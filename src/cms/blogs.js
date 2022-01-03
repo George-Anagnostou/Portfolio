@@ -1,6 +1,6 @@
 export const blogs = [
   {
-    title: "Tile Title Example",
+    title: "Tile Title Test",
     slug: "tile-title-example",
     snippet: "Lorem ipsum dolor sit amet consectetur. Animi, similique nisi soluta quo.",
     summary: `Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam cum nostrum pariatur
