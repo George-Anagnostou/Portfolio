@@ -1,39 +1,8 @@
-//Import Images
-
-import liftclubMain from "./img/projects/liftclub-main.jpeg";
-import liftclubWorkoutLog2 from "./img/projects/workout-log-2.png";
-import liftclubUserProfile from "./img/projects/user-profile.png";
-import liftclubPurpose from "./img/projects/liftclub-purpose.png";
-// import liftclubOldTeam1 from "./img/projects/liftclub-mobile1.jpg";
-// import liftclubOldTeam2 from "./img/projects/liftclub-mobile2.jpg";
-// import liftclubMainOld from "./img/projects/liftclub-main.jpg";
-
-import wildchristianMain from "./img/projects/awildchristian-main.jpeg";
-import wildchristianDesktop1 from "./img/projects/awildchristian-desktop1.jpg";
-import wildchristianDesktop2 from "./img/projects/awildchristian-desktop2.jpg";
-import wildchristianDesktop3 from "./img/projects/awildchristian-desktop3.jpg";
-import wildchristianMobile1 from "./img/projects/awildchristian-mobile1.jpg";
-import wildchristianMobile2 from "./img/projects/awildchristian-mobile2.jpg";
-
-import neologosMain from "./img/projects/neologos-main.jpeg";
-import neologosDesktop1 from "./img/projects/neologos-desktop1.jpg";
-import neologosDesktop2 from "./img/projects/neologos-desktop2.jpg";
-import neologosDesktop3 from "./img/projects/neologos-desktop3.jpg";
-import neologosMobile1 from "./img/projects/neologos-mobile1.jpg";
-import neologosMobile2 from "./img/projects/neologos-mobile2.jpg";
-
-import lofiMain from "./img/projects/lofiwaves-main.jpeg";
-import lofiMobile from "./img/projects/lofiwaves-mobile.jpg";
-import lofiDesktop from "./img/projects/lofiwaves-desktop.jpg";
-
-// import vibetribeMobile from "./img/projects/vibetribe-mobile.jpg";
-// import vibetribeDesktop from "./img/projects/vibetribe-desktop.jpg";
-
 export const projectState = [
   {
     title: "Lift Club",
-    desktopImgs: [liftclubMain, liftclubPurpose],
-    mobileImgs: [liftclubUserProfile, liftclubWorkoutLog2],
+    desktopImgs: [],
+    mobileImgs: [],
     externalLink: "https://liftclub.app/",
     github: "https://github.com/ChristianAnagnostou/liftclub",
     url: "/work/liftclub",
@@ -62,13 +31,8 @@ export const projectState = [
   },
   {
     title: "Photo e-commerce",
-    desktopImgs: [
-      wildchristianMain,
-      wildchristianDesktop1,
-      wildchristianDesktop2,
-      wildchristianDesktop3,
-    ],
-    mobileImgs: [wildchristianMobile1, wildchristianMobile2],
+    desktopImgs: [],
+    mobileImgs: [],
     externalLink: "https://awildchristian.com/",
     github: "https://github.com/ChristianAnagnostou/anagnostou-photography-frontend",
     url: "/work/awildchristian",
@@ -92,8 +56,8 @@ export const projectState = [
   },
   {
     title: "NeoLogos",
-    desktopImgs: [neologosMain, neologosDesktop1, neologosDesktop2, neologosDesktop3],
-    mobileImgs: [neologosMobile1, neologosMobile2],
+    desktopImgs: [],
+    mobileImgs: [],
     externalLink: "https://neologos.herokuapp.com/",
     github: "https://github.com/ChristianAnagnostou/NeoLogos",
     url: "/work/neologos",
@@ -117,8 +81,8 @@ export const projectState = [
   },
   {
     title: "Music Player",
-    desktopImgs: [lofiMain, lofiDesktop],
-    mobileImgs: [lofiMobile],
+    desktopImgs: [],
+    mobileImgs: [],
     externalLink: "http://lofiwaves.surge.sh/",
     github: "https://github.com/ChristianAnagnostou/LofiWaves",
     url: "/work/lofiwaves",
@@ -140,27 +104,4 @@ export const projectState = [
       },
     ],
   },
-  // {
-  //   title: "Spotify Playlist Creator",
-  //   desktopImgs: [vibetribeDesktop],
-  //   mobileImgs: [vibetribeMobile],
-  //   externalLink: "http://vibetribe.surge.sh/",
-  //   github: "https://github.com/ChristianAnagnostou/VibeTribe",
-  //   url: "/work/vibetribe",
-  //   details: [
-  //     {
-  //       title: "Front-end",
-  //       description:
-  //         "Initially made with React classes. Revisited an refactored to use functional components and redux.",
-  //     },
-  //     {
-  //       title: "Spotify",
-  //       description: "Features Spotify authentication and full playlist customization",
-  //     },
-  //     {
-  //       title: "Documentation",
-  //       description: "Fully documented git repository with a complete step-by-step build process",
-  //     },
-  //   ],
-  // },
 ];

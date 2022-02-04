@@ -1,9 +1,9 @@
 {
   "short_name": "Web Portfolio",
-  "name": "Christian Anagnostou's Web Portfolio",
+  "name": "Geoerge Anagnostou's Portfolio",
   "icons": [
     {
-      "src": "favicon.jpg",
+      "src": "favicon.jpeg",
       "sizes": "64x64 32x32 24x24 16x16",
       "type": "image/x-icon"
     }
