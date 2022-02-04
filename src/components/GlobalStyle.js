@@ -44,6 +44,7 @@ const GlobalStyle = createGlobalStyle`
     
     &:hover{ 
       text-decoration: underline dashed #6DA5EA;
+      text-underline-offset: 2px;
     }
   }
 `;

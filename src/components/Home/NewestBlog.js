@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import { blogs } from "../../../cms/blogs";
+import { blogs } from "../../cms/blogs";
 
 function LatestBlog() {
   const [selectedPost, setSelectedPost] = useState(blogs[0]);

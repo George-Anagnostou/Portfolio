@@ -2,10 +2,6 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import { useHistory } from "react-router-dom";
 import { projectState } from "../../projectState";
-// Animations
-import { motion } from "framer-motion";
-import { pageAnimation } from "../../animation";
-import ScrollTop from "../ScrollTop";
 
 function ProjectDetails() {
   const history = useHistory();
@@ -20,24 +16,17 @@ function ProjectDetails() {
 
   return (
     <>
-      <ScrollTop />
-
       {project && (
-        <Container variants={pageAnimation} initial="hidden" animate="show" exit="exit">
+        <Container>
           <h2>{project.title}</h2>
 
           <div className="link-container">
-            <motion.a
-              className="live-link"
-              href={project.externalLink}
-              target="_blank"
-              rel="noreferrer"
-            >
+            <a className="live-link" href={project.externalLink} target="_blank" rel="noreferrer">
               Live view
-            </motion.a>
-            <motion.a className="live-link" href={project.github} target="_blank" rel="noreferrer">
+            </a>
+            <a className="live-link" href={project.github} target="_blank" rel="noreferrer">
               Github Repo
-            </motion.a>
+            </a>
           </div>
 
           <MobileAndText>
@@ -79,7 +68,7 @@ const Detail = ({ title, description, index }) => {
 };
 
 // styled components
-const Container = styled(motion.div)`
+const Container = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;

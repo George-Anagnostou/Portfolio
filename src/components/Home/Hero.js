@@ -1,9 +1,8 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-// Icons
-import Gitgub from "../../../img/GitHub";
 
+import SocialLinks from "../SocialLinks";
 
 function Hero() {
   return (
@@ -48,15 +47,7 @@ function Hero() {
         <h4>Externals</h4>
 
         <div className="social-links">
-          <a href="https://github.com/George-Anagnostou" target="_blank" rel="noreferrer">
-            <Gitgub />
-          </a>
-          <a href="https://github.com/George-Anagnostou" target="_blank" rel="noreferrer">
-            <Gitgub />
-          </a>
-          <a href="https://github.com/George-Anagnostou" target="_blank" rel="noreferrer">
-            <Gitgub />
-          </a>
+          <SocialLinks />
         </div>
       </QuickLinks>
     </StyledSection>

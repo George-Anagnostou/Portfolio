@@ -1,16 +1,11 @@
 import React from "react";
-// Style
-import GlobalStyle from "./components/GlobalStyle";
-// Components
-import Nav from "./components/Nav";
-// Pages
-import HomePage from "./components/AboutPage/HomePage";
-import ContactUs from "./components/ContactPage/ContactUs";
-import ProjectDetails from "./components/ProjectPage/ProjectDetails";
-// Router
 import { Switch, Route, useLocation } from "react-router-dom";
-// Animation
-import { AnimatePresence } from "framer-motion";
+
+import GlobalStyle from "./components/GlobalStyle";
+import Nav from "./components/Nav";
+import Home from "./pages/Home";
+import Contact from "./pages/Contact";
+import ProjectDetails from "./components/Work/ProjectDetails";
 
 function App() {
   const location = useLocation();
@@ -21,21 +16,15 @@ function App() {
 
       <Nav />
 
-      <AnimatePresence exitBeforeEnter>
-        <Switch location={location} key={location.pathname}>
-          <Route path="/" exact>
-            <HomePage />
-          </Route>
+      <Switch location={location} key={location.pathname}>
+        <Route exact path="/" component={Home} />
 
-          <Route path="/work/:id">
-            <ProjectDetails />
-          </Route>
+        <Route path="/work/:id">
+          <ProjectDetails />
+        </Route>
 
-          <Route path="/contact">
-            <ContactUs />
-          </Route>
-        </Switch>
-      </AnimatePresence>
+        <Route exact path="/contact" component={Contact} />
+      </Switch>
     </div>
   );
 }

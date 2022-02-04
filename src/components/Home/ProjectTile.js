@@ -2,40 +2,34 @@ import React from "react";
 
 import styled from "styled-components";
 import { Link } from "react-router-dom";
-// Animations
-import { motion } from "framer-motion";
-import { fade, photoAnim, lineAnim } from "../../../animation";
-import { useScroll } from "../../useScroll";
 
 export default function ProjectTile({ project }) {
-  const [element, controls] = useScroll();
-
   return (
-    <Project ref={element} variants={fade} animate={controls} initial="hidden">
-      <motion.header variants={lineAnim}>
+    <Project>
+      <header>
         <h2>{project.title}</h2>
 
         <div className="links">
-          <motion.a href={project.externalLink} target="_blank" rel="noreferrer">
+          <a href={project.externalLink} target="_blank" rel="noreferrer">
             Live Site
-          </motion.a>
-          <motion.a href={project.github} target="_blank" rel="noreferrer">
+          </a>
+          <a href={project.github} target="_blank" rel="noreferrer">
             GitHub
-          </motion.a>
+          </a>
           <Link to={project.url}>Details</Link>
         </div>
-      </motion.header>
+      </header>
 
       <Link to={project.url}>
         <Hide>
-          <motion.img variants={photoAnim} src={project.desktopImgs[0]} alt={project.title} />
+          <img src={project.desktopImgs[0]} alt={project.title} />
         </Hide>
       </Link>
     </Project>
   );
 }
 
-const Project = styled(motion.div)`
+const Project = styled.div`
   position: relative;
   padding-bottom: 10rem;
   width: 70%;
